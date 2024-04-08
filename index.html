@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore the Wild</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var track = 0;
+            console.log(track);
+            $(document).ready(function(){
+            
+              $(".hamburger").click(function(){
+                console.log("click");
+              if(track == 0) {
+                $("#overlay").show();
+                track = 1;
+                console.log("on");
+                }
+              });
+
+              $("#overlay").click(function() {
+                $("#overlay").hide();
+                console.log("off");
+                track = 0;
+              });
+
+            });
+        </script>
+        <nav id="desktop">
+            <img src="assets/logo.png" alt="Explore The Wild">
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#app">The App</a></li>
+                <li><a href="#mission">Mission</a></li>
+            </ul>
+            <a class="btn" href="#">Download Now</a>
+        </nav>
+
+        <nav id="mobileMenu">
+            <img src="assets/logo.png" alt="Explore The Wild">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="overlay">
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#app">The App</a></li>
+                <li><a href="#mission">Mission</a></li></li>
+            </ul>
+        </div>
+
+        <!--Hero Image-->
+        <div id="heroImage">
+            <div>
+                <h1>Savor the Adventure,<br>Embrace the Wild</h1>
+                <p>Embark on a journey of discovery with Explore the Wild, where nature's wonders unfold at your fingertips. Immerse yourself in the beauty of the wild, from identifying rare species to uncovering hidden trails – let the adventure begin.</p>
+                <a class="btn" href="#">Unlock Nature's Mysteries</a>
+            </div>
+        </div>
+        
+        <div class="content">
+
+            <!--Introduction-->
+            <div id="intro" class="two-col">
+                <div>
+                    <h2>Embrace Nature with<br> Explore the Wild</h2>
+                    <p>Step into a realm where every leaf tells a story, and every trail reveals the secrets of ecosystems waiting to be explored. "Explore the Wild" beckons you to embark on a journey of discovery, offering a seamless blend of technology and the great outdoors. From identifying elusive flora and fauna with our cutting-edge image recognition to sharing your nature exploits with a like-minded community, our startup is designed to foster a deep appreciation for the environment and ignite the explorer within.</p>
+                    <p>More than just an app, "Explore the Wild" is a movement, an advocate for sustainable living and a champion of environmental stewardship. Whether you're a seasoned naturalist or a city dweller yearning for a breath of fresh air, our platform opens the door to green initiatives, educational resources, and eco-friendly challenges. Join us in preserving the planet, one digital step at a time, and let the call of the wild inspire your journey towards a greener, more connected world.</p>
+                </div>
+                <div>
+                    <img src="assets/intro.jpg" alt="Mountians">
+                </div>
+            </div>
+
+            <!--Cards-->
+            <div id="features" class="cards">
+                <div>
+                    <img src="assets/trails.jpg" alt="Secret Mountian Trail">
+                    <h3>Discover Hidden Trails</h3>
+                    <p>Explore uncharted territories and discover hidden trails with the app's curated nature routes. From lush forests to serene meadows, embark on awe-inspiring adventures tailored to your preferences. Each trail comes with detailed information on difficulty levels, points of interest, and the unique flora and fauna awaiting your exploration.</p>
+                    <a href="#">Learn More →</a>
+                </div>
+                <div>
+                    <img src="assets/wildlife.jpg" alt="Secret Mountian Trail">
+                    <h3>Identify Wildlife on the Go</h3>
+                    <p>Become a nature detective with our cutting-edge image recognition technology. Capture the beauty of plants and animals around you, and let the app instantly identify and provide fascinating details about them. Whether you're a budding naturalist or just curious about the world outside your window, "Explore the Wild" turns every outdoor moment into an educational experience.</p>
+                    <a href="#">Learn More →</a>
+                </div>
+                <div>
+                    <img src="assets/eco-challenges.jpg" alt="Secret Mountian Trail">
+                    <h3>Join Eco-Friendly Challenges</h3>
+                    <p>Engage with the community and make a positive impact on the environment through our eco-friendly challenges. Plant virtual trees, reduce your carbon footprint, and earn badges for sustainable practices. "Explore the Wild" transforms your love for nature into actionable steps, creating a shared commitment to conservation and fostering a community dedicated to preserving the planet.</p>
+                    <a href="#">Learn More →</a>
+                </div>
+            </div>
+
+            <!--App-->
+            <h2 style="margin-top:120px; text-align:center;">Unleashing Nature's Toolkit: Explore the Wild App Features</h2>
+            <div id="app">
+                <div class="icon-section">
+                    <div class="left-icon">
+                        <img src="assets/ferm.png" alt="Fern">
+                        <div>
+                            <h4>Trail Explorer</h4>
+                            <p>Discover scenic routes and hidden gems with detailed highlights</p>
+                        </div>
+                    </div>
+                    <div class="right-icon">
+                        <div>
+                            <h4>Wildlife Scanner</h4>
+                            <p>Instantly identify plants and animals in your surroundings with our advanced image recognition tool</p>
+                        </div>
+                        <img src="assets/camera.png" alt="Camera">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/floatingMockup.png" alt="Floating App Mock-up">
+                </div>
+                
+                <div class="icon-section">
+                    <div class="left-icon">
+                        <img src="assets/planting.png" alt="Planting">
+                        <div>
+                            <h4>Eco-Challenges</h4>
+                            <p>Earn badges for sustainable practices and join virtual initiatives for environmental conservation</p>
+                        </div>
+                    </div>
+                    <div class="right-icon">
+                        <div>
+                            <h4>Nature Community</h4>
+                            <p>Connect with fellow explorers, share experiences, and contribute to fostering a deeper appreciation for the natural world</p>
+                        </div>
+                        <img src="assets/community.png" alt="Community">
+                    </div>
+                </div>
+            </div>
+
+            <!--Mission-->
+            <div id="mission">
+                <h2>Our Mission: Nurturing a Greener Tomorrow with Explore the Wild</h2>
+                <div class="two-col">
+                    <div>
+                        <p>At Explore the Wild, our mission is to reconnect individuals with the profound beauty of the natural world while instilling a sense of responsibility for its preservation. We believe that fostering a deeper connection to nature is not just an escape but a fundamental step towards building a sustainable and harmonious future. Through our innovative app, we aim to inspire a global community dedicated to exploring, appreciating, and actively contributing to the well-being of our planet.</p>
+                    </div>
+                    <div>
+                        <p>Explore the Wild is not just an app; it's a movement. We are committed to creating a community where nature enthusiasts, conservationists, and curious minds converge to share their passion for the environment. Our mission extends beyond exploration — we strive to leave a lasting impact on the planet by promoting sustainability, eco-conscious practices, and a profound appreciation for the delicate ecosystems that surround us. Together, let's embark on a journey towards a greener, more connected tomorrow.</p>
+                    </div>
+                </div>
+                <a class="btn" href="#">Join Explore the Wild</a>
+            </div>
+
+            <!--Contact Form-->
+            <div id="contact" class="two-col">
+                <div>
+                    <h2>Reach Out and Roar!</h2>
+                    <p><i class="sm-icon email"></i>Email: <a href="mailto:info@explorethewild.com"> info@explorethewild.com</a></p>
+                    <p><i class="sm-icon phone"></i>Phone: <a href="tel:5551234567"> (555) 123-4567</a></p>
+                    <p>Our dedicated support team is available Monday to Friday, from 9 AM to 5 PM (EST), to address any inquiries or concerns you may have. Reach out to us via email or phone, and we'll ensure a prompt and personalized response.</p>
+                </div>  
+                <div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Name...">
+                        <input type="email" name="Email" placeholder="Email...">
+                        <label for="contactReason">Reason for Contact</label>
+                        <input list="contactReason" name="contactReason" placeholder="Contact Reason...">
+                        <datalist id="contactReason" >
+                            <option value="Want a Job"></option>
+                            <option value="Want to Invest"></option>
+                            <option value="I'm a Spammer"></option>
+                        </datalist>
+                        <textarea name="message" rows="5" placeholder="Message..."></textarea>
+                        <input class="btn" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
